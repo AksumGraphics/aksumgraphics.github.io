@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.axumgraphics.com/sitemap.xml
+# Current GitHub Pages sitemap
+Sitemap: https://aksumgraphics.github.io/sitemap.xml
+
+# Future custom domain sitemap (will work when domain is added in Pages settings)
+Sitemap: https://www.aksumgraphics.com/sitemap.xml

@@ -1,23 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Current GitHub Pages URLs -->
   <url>
-    <loc>https://www.axumgraphics.com/</loc>
-    <loc>/</loc>
+    <loc>https://aksumgraphics.github.io/</loc>
   </url>
   <url>
-    <loc>https://www.axumgraphics.com/#portfolio</loc>
-    <loc>/#portfolio</loc>
+    <loc>https://aksumgraphics.github.io/#portfolio</loc>
   </url>
   <url>
-    <loc>https://www.axumgraphics.com/#services</loc>
-    <loc>/#services</loc>
+    <loc>https://aksumgraphics.github.io/#services</loc>
   </url>
   <url>
-    <loc>https://www.axumgraphics.com/#testimonials</loc>
-    <loc>/#testimonials</loc>
+    <loc>https://aksumgraphics.github.io/#testimonials</loc>
   </url>
   <url>
-    <loc>https://www.axumgraphics.com/#contact</loc>
-    <loc>/#contact</loc>
+    <loc>https://aksumgraphics.github.io/#contact</loc>
   </url>
+
+  <!-- Future Custom Domain URLs -->
+  <url>
+    <loc>https://www.aksumgraphics.com/</loc>
+  </url>
+  <url>
+    <loc>https://www.aksumgraphics.com/#portfolio</loc>
+  </url>
+  <url>
+    <loc>https://www.aksumgraphics.com/#services</loc>
+  </url>
+  <url>
+    <loc>https://www.aksumgraphics.com/#testimonials</loc>
+  </url>
+  <url>
+    <loc>https://www.aksumgraphics.com/#contact</loc>
+  </url>
+
 </urlset>
