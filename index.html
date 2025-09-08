@@ -141,6 +141,52 @@
     .animate.visible{ opacity:1; transform:none; }
     /* focus ring */
     a:focus, button:focus, input:focus, textarea:focus{ outline:3px solid rgba(240,148,16,0.22); outline-offset:3px; }
+  /* Hero: stack text + profile on small screens */
+@media (max-width:800px){
+  .hero {
+    display: block;
+    text-align: center;
+    padding: 32px 16px;
+  }
+  .hero .wrap {
+    display: block !important;
+  }
+  .profile-card {
+    margin-top: 20px;
+  }
+}
+
+/* Portfolio grid */
+@media (max-width:800px){
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Testimonials single column on small */
+@media (max-width:800px){
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Navigation mobile menu: full width */
+@media (max-width:800px){
+  nav.main-nav[data-open="true"] {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  nav.main-nav a {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+}
+
   </style>
 </head>
 <body>
