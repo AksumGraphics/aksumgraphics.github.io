@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.axumgraphics.com/</loc>
+    <loc>/</loc>
+  </url>
+  <url>
+    <loc>https://www.axumgraphics.com/#portfolio</loc>
+    <loc>/#portfolio</loc>
+  </url>
+  <url>
+    <loc>https://www.axumgraphics.com/#services</loc>
+    <loc>/#services</loc>
+  </url>
+  <url>
+    <loc>https://www.axumgraphics.com/#testimonials</loc>
+    <loc>/#testimonials</loc>
+  </url>
+  <url>
+    <loc>https://www.axumgraphics.com/#contact</loc>
+    <loc>/#contact</loc>
+  </url>
+</urlset>

@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Logo & Branding Designer for Startups | Abdisa Muleta – Axum Graphics</title>
+  <meta name="description" content="Axum Graphics — Abdisa Muleta. Professional logo & brand identity designer. Portfolio, services, and contact." />
+  <meta property="og:title" content="Abdisa Muleta — Axum Graphics" />
+  <meta property="og:description" content="Professional logo & brand identity designer. Browse selected works and get in touch." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <style>
+    .intro{ color: #ffffff;
+    }
+    .profile-card img {
+  margin-left: auto;   /* align to right inside the 360px column */
+  margin-right: 0;
+}.hero {
+  grid-template-columns: 1fr 300px;  /* reduce from 360px to 300px */
+}
+    :root{
+      --brand-orange: #f09410;
+      --brand-orange-2: #bc430d;
+      --bg-dark: #0b0b0b;
+      --text-dark: #f7f7f7;
+      --bg-light: #ffffff;
+      --text-light: #111111;
+      --muted: #9a9a9a;
+      --radius: 12px;
+      --container: 1100px;
+      --glass-dark: rgba(255,255,255,0.06);
+      --glass-light: rgba(0,0,0,0.04);
+    }
+    /* theme variables */
+    body.light{
+      --bg: var(--bg-light);
+      --text: var(--text-light);
+      --nav-bg: #fff;
+      --card-bg: #fff;
+      --glass: var(--glass-light);
+    }
+    body{
+      --bg: var(--bg-dark);
+      --text: var(--text-dark);
+      --nav-bg: rgba(0,0,0,0.3);
+      --card-bg: rgba(255,255,255,0.03);
+      --glass: var(--glass-dark);
+      margin:0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      transition: background .25s ease, color .25s ease;
+    }
+    .wrap{ max-width:var(--container); margin:0 auto; padding:24px; }
+    /* header */
+    header.site-header{
+      position: sticky; top:0; z-index:999;
+      backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.25));
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    header .inner{ display:flex; align-items:center; gap:16px; justify-content:space-between; padding:12px 24px; }
+    .brand{ display:flex; gap:12px; align-items:center; text-decoration:none; color:var(--text); }
+    .brand img{ height:44px; width:44px; object-fit:contain; border-radius:10px; background:var(--brand-orange); padding:6px; }
+    .brand h1{ font-size:18px; margin:0; font-weight:800; letter-spacing:.2px; }
+    nav.main-nav{ display:flex; gap:12px; align-items:center; }
+    nav.main-nav a{ color:var(--text); text-decoration:none; font-weight:700; padding:8px 12px; border-radius:999px; }
+    nav.main-nav a:hover, nav.main-nav a.active{ background:var(--glass); color:var(--brand-orange); }
+    .menu-toggle{ display:none; border:0; background:transparent; color:var(--text); font-size:20px; }
+    @media (max-width:800px){
+      nav.main-nav{ display:none; position:absolute; right:16px; top:68px; background:var(--nav-bg); border-radius:12px; padding:10px; box-shadow:0 8px 30px rgba(0,0,0,0.5); }
+      nav.main-nav[data-open="true"]{ display:flex; flex-direction:column; min-width:180px; }
+      .menu-toggle{ display:block; }
+    }
+    /* hero with animated gradient  display:grid; */
+    .hero{
+      padding:56px 0; grid-template-columns: 1fr 360px; gap:24px; align-items:center;
+      background: linear-gradient(-45deg,#0b0b0b,#111,#151515,#0b0b0b);
+      background-size: 400% 400%;
+      animation: gradientShift 18s ease infinite;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    @keyframes gradientShift{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    .hero .intro h2{ font-family:"Playfair Display",serif; font-size:36px; margin:0 0 12px 0; }
+    .hero .intro p{ color:var(--muted); margin:0 0 18px 0; max-width:60ch; }
+    .hero .hero-cta{ display:flex; gap:10px; flex-wrap:wrap; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; background:transparent; color:white; border:2px solid var(--text); padding:11px 18px; border-radius:999px; text-decoration:none; font-weight:800; }
+    .btn.primary{ background: linear-gradient(90deg,var(--brand-orange),var(--brand-orange-2)); color:#fff; border:0; box-shadow:0 8px 24px rgba(188,67,13,0.12); }
+    .btn.ghost{ border-color:var(--brand-orange); color:var(--brand-orange); }
+    .profile-card{ background:var(--card-bg); border-radius:14px; padding:16px; text-align:center; box-shadow: 0 8px 30px rgba(0,0,0,0.4); align:left;}
+    .profile-card img{ width:220px; height:220px; object-fit:cover; border-radius:50%; display:block; margin:0 auto; box-shadow:0 4px 20px rgba(0,0,0,0.4); background:#101010; }
+    .profile-card .small{ color:var(--muted); margin-top:10px; }
+    section{ padding:40px 0; }
+    h2.section-title{ font-size:26px; display:inline-block; border-bottom:3px solid var(--brand-orange); padding-bottom:6px; margin-bottom:18px; font-family:"Playfair Display",serif; }
+    /* filters */
+    .filters{ display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 20px; }
+    .filter-btn{ padding:8px 12px; border-radius:999px; border:1px solid rgba(255,255,255,0.10); background:transparent; cursor:pointer; font-weight:800; color:var(--text); }
+    .filter-btn.active{ background:linear-gradient(90deg,var(--brand-orange),var(--brand-orange-2)); color:#fff; border:0; }
+    /* grid & cards */
+    .portfolio-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; }
+    .card{ background:var(--card-bg); padding:12px; border-radius:12px; overflow:hidden; transition:transform .25s ease, box-shadow .2s ease; position:relative; }
+    .card img{ width:100%; height:220px; object-fit:contain; background:#0f0f0f; border-radius:10px; }
+    .card h4{ margin:10px 0 6px 0; font-size:16px; }
+    .card p{ color:var(--muted); font-size:14px; margin:0; }
+    .card:hover{ transform:translateY(-6px); box-shadow:0 18px 40px rgba(0,0,0,0.5); }
+    .card::after{ content:"View Project →"; position:absolute; bottom:8px; left:12px; right:12px; background:rgba(0,0,0,0.65); color:#fff; padding:8px; border-radius:8px; text-align:center; opacity:0; transition:.25s; }
+    .card:hover::after{ opacity:1; }
+    @media (max-width:1000px){ .hero{ grid-template-columns:1fr; } .portfolio-grid{ grid-template-columns: repeat(2,1fr);} .profile-card img{ height:200px; } }
+    @media (max-width:600px){ .portfolio-grid{ grid-template-columns:1fr; } .wrap{ padding:16px; } }
+    /* services */
+    .services-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:16px; }
+    .service-card{ background:var(--card-bg); padding:18px; border-radius:12px; }
+    .service-card h4{ margin:6px 0 8px; color:var(--brand-orange); }
+    .service-card p{ margin:0; color:var(--muted); }
+    /* testimonials */
+    .testimonials{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .testimonial{ background:var(--card-bg); padding:16px; border-radius:12px; }
+    .testimonial p{ margin:0 0 10px; }
+    /* contact */
+    form.contact-form{ display:grid; gap:10px; max-width:720px; }
+    form .row{ display:flex; gap:8px; align-items:center; }
+    form input, form textarea{ padding:11px 12px; border-radius:10px; border:1px solid rgba(255,255,255,0.08); background:transparent; color:var(--text); min-height:44px; }
+    form textarea{ min-height:120px; resize:vertical; }
+    .small{ font-size:13px; color:var(--muted); }
+    /* footer */
+    footer.site-footer{ padding:22px 0; text-align:center; color:var(--muted); border-top:1px solid rgba(255,255,255,0.05); margin-top:30px; }
+    .social-icons img{ width:22px; height:22px; margin:0 6px; vertical-align:middle; filter:grayscale(100%) brightness(1.1); }
+    .social-icons img:hover{ filter:none; }
+    /* utilities */
+    .flex{ display:flex; align-items:center; gap:8px; }
+    .right{ margin-left:auto; }
+    .hide{ display:none; }
+    /* animation */
+    .animate{ opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease; }
+    .animate.visible{ opacity:1; transform:none; }
+    /* focus ring */
+    a:focus, button:focus, input:focus, textarea:focus{ outline:3px solid rgba(240,148,16,0.22); outline-offset:3px; }
+  </style>
+</head>
+<body>
+<header class="site-header" role="banner" aria-label="Main header">
+  <div class="inner wrap">
+    <a class="brand" href="#top" aria-label="Axum Graphics - Home">
+      <img src="logo.png" alt="Axum Graphics logo mark">
+      <h1>Axum Graphics</h1>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav" class="main-nav" role="navigation" aria-label="Primary navigation" data-open="false">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn" title="Toggle dark / light">🌙/☀️</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Introduction">
+    <div class="wrap" style="display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:center;">
+      <div class="intro">
+        <h2>Hello  I’m <strong>Abdisa Muleta</strong></h2>
+        <p>Founder of Axum Graphics. I create memorable logos & brand identities for startups and established businesses. Minimal, modern, and future‑ready design.</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#contact">Hire Me</a>
+          <a class="btn" href="#portfolio">View Work</a>
+          <a class="btn" href="#services">Services</a>
+          <a class="btn ghost" href="resume.pdf" download="Abdisa_Muleta_Resume.pdf">Download Resume</a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="profile.webp" alt="Abdisa Muleta — professional brand identity designer (portrait)" loading="lazy">
+        <p class="small">Brand identity & logo specialist • 3+ years experience • 113+ logos delivered</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="wrap" aria-labelledby="portfolioTitle">
+    <h2 id="portfolioTitle" class="section-title">Portfolio</h2>
+    <div class="filters" role="tablist" aria-label="Portfolio filters">
+      <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="logo">Logo</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolioGrid" aria-live="polite">
+      <!-- 6 Brand Identity Projects -->
+      <article class="card animate" data-category="branding" data-images="project1.webp">
+        <img src="project1.webp" alt="Minimalist brand identity project — Project 1 (WebP)" loading="lazy">
+        <h4>Brand Identity for Pixel Perfect</h4>
+        <p>Logo and brand identity for Pixel Perfect. Precise, modern visuals highlighting accuracy, detail, and clarity ideal for a digital design-focused tech company.</p>
+      </article>
+      <article class="card animate" data-category="branding" data-images="project2.webp">
+        <img src="project2.webp" alt="Minimalist brand identity project — Project 2 (WebP)" loading="lazy">
+        <h4>Brand Identity Byte Breeze</h4>
+        <p>Visual identity for Byte Breeze, a tech startup. Fresh, minimal design with dynamic shapes that represent efficiency, and smooth digital experiences.</p>
+      </article>
+      <article class="card animate" data-category="branding" data-images="project3.webp">
+        <img src="project3.webp" alt="Modern brand identity and packaging — Project 3 (WebP)" loading="lazy">
+        <h4>Brand Identity Pryon</h4>
+        <p>Brand identity for Pryon, a modern tech company. Clean, futuristic logo with strong typography and color system that reflects innovation and digital reliability.</p>
+      </article>
+      <article class="card animate" data-category="branding" data-images="project4.webp">
+        <img src="project4.webp" alt="Corporate rebrand guideline — Project 4 (WebP)" loading="lazy">
+        <h4>Brand Identity Chava Leather</h4>
+        <p>Brand identity for Chava Leather. Modern, luxury-inspired logo and design system emphasizing elegance, durability, and timeless appeal in the fashion and accessories market.</p>
+      </article>
+      <article class="card animate" data-category="branding" data-images="project5.webp">
+        <img src="project5.webp" alt="Startup branding system — Project 5 (WebP)" loading="lazy">
+        <h4>Brand Identity Aksum Graphics</h4>
+        <p>Brand identity for Aksum Graphics, a creative agency. Minimal yet bold design system with versatile logo, professional typography, and vibrant accents for strong visibility</p>
+      </article>
+      <article class="card animate" data-category="branding" data-images="project6.webp">
+        <img src="project6.webp" alt="Professional brand identity kit — Project 6 (WebP)" loading="lazy">
+        <h4>Brand Identity Kendrix Business Consulting</h4>
+        <p>Visual identity for Kendrix Consulting. Elegant, professional logo paired with a structured color palette and typography system to express trust, clarity, and expertise.</p>
+      </article>
+
+      <!-- 3 Logofolio pages -->
+      <article class="card animate" data-category="logo" data-images="logofolio1.webp">
+        <img src="logofolio1.webp" alt="Logofolio page 1 — 24+ logo collection (WebP)" loading="lazy">
+        <h4>Logofolio — Page 1</h4>
+        <p>Selection of 24+ professional logo designs.</p>
+      </article>
+      <article class="card animate" data-category="logo" data-images="logofolio2.webp">
+        <img src="logofolio2.webp" alt="Logofolio page 2 — curated logos (WebP)" loading="lazy">
+        <h4>Logofolio — Page 2</h4>
+        <p>Collection of unique modern marks.</p>
+      </article>
+      <article class="card animate" data-category="logo" data-images="logofolio3.webp">
+        <img src="logofolio3.webp" alt="Logofolio page 3 — premium logos (WebP)" loading="lazy">
+        <h4>Logofolio — Page 3</h4>
+        <p>Premium symbols & brand marks.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="services" class="wrap" aria-labelledby="servicesTitle">
+    <h2 id="servicesTitle" class="section-title">Services</h2>
+    <div class="services-grid">
+      <div class="service-card"><h4>🎨 Logo Design</h4><p>Minimal, Mascot, Emblem, Lettermark<br><strong>from $25</strong></p></div>
+      <div class="service-card"><h4>📖 Brand Identity</h4><p>Brand kits, Style guides<br><strong>from $80</strong></p></div>
+      <div class="service-card"><h4>🖨️ Print & Packaging</h4><p>Flyers, Brochures, Stickers<br><strong>from $20</strong></p></div>
+      <div class="service-card"><h4>📱 Social Media Assets</h4><p>Posts, Ads, Templates<br><strong>from $20</strong></p></div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="wrap" aria-labelledby="testimonialsTitle">
+    <h2 id="testimonialsTitle" class="section-title">Testimonials</h2>
+    <div class="testimonials">
+      <div class="testimonial animate">
+        <h3>Emily Roberts – Tech Entrepreneur</h3>
+        <p><strong>Service:</strong> Modern Logo & Brand Identity</p>
+        <p><strong>Rating:</strong> 5.0 / 5</p>
+        <p><strong>Date:</strong> May 10, 2024 – May 18, 2024</p>
+        <p class="review">
+          “After working with Abdisa on multiple projects, I can say he is a true expert in logo design. Every design is unique, modern, and professional. Communication is smooth, deadlines are met, and results consistently exceed expectations.”
+        </p>
+      </div>
+      <div class="testimonial animate">
+        <h3>Michael Lawson – Fashion Brand Owner</h3>
+        <p><strong>Service:</strong> Modern, Minimal Luxury Logo Design</p>
+        <p><strong>Rating:</strong> 5.0 / 5</p>
+        <p><strong>Date:</strong> Oct 15, 2024 – Oct 21, 2024</p>
+        <p class="review">
+          “I worked with Abdisa on a logo design project and was thrilled with the outcome. He communicated clearly, delivered on time, and created a design that perfectly matched my brand vision. Professional, responsive, and open to feedback.”
+        </p>
+      </div>
+      <div class="testimonial animate">
+        <p><strong>Client:</strong> David Chen – Tech Entrepreneur</p>
+        <p><strong>Service:</strong> Logo Design for Pryon</p>
+        <p><strong>Date:</strong> September 2024</p>
+        <p><strong>Testimonial:</strong> “The logo design was spot-on. Clean, modern, and perfectly aligned with our tech vision. Communication was smooth, and every revision was handled professionally.”</p>
+        <p><strong>Startup Founder</strong></p>
+      </div>
+      <div class="testimonial animate">
+        <p><strong>Client:</strong> Maria Gonzalez – Business Consultant</p>
+        <p><strong>Service:</strong> Brand Identity for Kendrix Consulting</p>
+        <p><strong>Date:</strong> January 2025</p>
+        <p><strong>Testimonial:</strong> “I needed a professional identity to build trust with clients. Abdisa delivered a sharp logo, thoughtful color palette, and brand system that elevated my consulting business.”</p>
+        <p><strong>Business Consultant</strong></p>
+      </div>
+      <div class="testimonial animate">
+        <p><strong>Client:</strong> Alex Thompson – Startup Founder</p>
+        <p><strong>Service:</strong> Logo & Brand Identity for Byte Breeze</p>
+        <p><strong>Date:</strong> June 2024</p>
+        <p><strong>Testimonial:</strong> “Abdisa created a sleek and modern brand identity that perfectly captures our tech startup’s energy. The process was smooth and professional from start to finish.”</p>
+        <p><strong>Startup Founder</strong></p>
+        </strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap" aria-labelledby="contactTitle">
+    <h2 id="contactTitle" class="section-title">Contact</h2>
+    <p class="small">Prefer email? <a href="mailto:abdisamuleta847@gmail.com" style="color:var(--brand-orange)">abdisamuleta847@gmail.com</a></p>
+
+    <form id="contactForm" class="contact-form" aria-label="Contact form">
+      <input type="text" name="name" id="name" placeholder="Your full name" required />
+      <input type="email" name="email" id="email" placeholder="Your email" required />
+      <input type="text" name="subject" id="subject" placeholder="Subject" />
+      <textarea name="message" id="message" placeholder="How can I help you?" required></textarea>
+      <div class="row">
+        <button id="sendBtn" class="btn primary" type="submit">Send Message</button>
+        <div class="right small"><span id="formStatus"></span></div>
+      </div>
+    </form>
+    <div style="margin-top:16px;">
+      <a class="btn primary" href="https://calendly.com/abdisamuleta847/30min" target="_blank">Book a Call</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="flex" style="flex-wrap:wrap;gap:12px;justify-content:space-between;">
+      <div>
+        <div class="quick-links"><a href="#top">Home</a> | <a href="#portfolio">Portfolio</a> | <a href="#services">Services</a> | <a href="#contact">Contact</a></div>
+        <div class="cta">Let’s build your brand → <strong>Start a project today.</strong></div>
+        <div class="small">© 2025 Abdisa Muleta | Axum Graphics</div>
+      </div>
+      <div class="social-icons" aria-label="Social and freelancer profiles">
+        <a href="https://instagram.com/axum_graphics" target="_blank" aria-label="Instagram"><img src="icons/instagram.svg" alt="Instagram icon"></a>
+        <a href="https://x.com/axum_graphics" target="_blank" aria-label="X"><img src="icons/x.svg" alt="X icon"></a>
+        <a href="https://www.linkedin.com/in/abdisa-branding-expert" target="_blank" aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn icon"></a>
+        <a href="https://www.upwork.com/freelancers/~0126776e2470f357d7" target="_blank" aria-label="Upwork"><img src="icons/upwork.svg" alt="Upwork icon"></a>
+        <a href="https://www.fiverr.com/abdisa01_" target="_blank" aria-label="Fiverr"><img src="icons/fiverr.svg" alt="Fiverr icon"></a>
+        <a href="https://www.freelancer.com/u/abdisa1" target="_blank" aria-label="Freelancer"><img src="icons/freelancer.svg" alt="Freelancer icon"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div id="portfolioModal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.92); z-index:9999; align-items:center; justify-content:center; flex-direction:column; padding:20px; box-sizing:border-box;">
+  <button id="modalClose" aria-label="Close" style="color:white; position:absolute; top:20px; right:30px; font-size:32px; cursor:pointer; background:none; border:none;">×</button>
+  <img id="modalImg" src="" alt="Project image enlarged" style="max-width:90%; max-height:80%; border-radius:8px; box-shadow:0 4px 20px rgba(0,0,0,0.5);" />
+  <div style="margin-top:12px; display:flex; gap:16px;">
+    <button id="prevImg" class="btn">Prev</button>
+    <button id="nextImg" class="btn primary">Next</button>
+  </div>
+</div>
+
+<script>
+// Helpers
+const q = s => document.querySelector(s);
+const qa = s => Array.from(document.querySelectorAll(s));
+
+// Mobile menu
+const menuToggle = q('#menuToggle');
+const mainNav = q('#mainNav');
+menuToggle?.addEventListener('click', () => {
+  const open = mainNav.getAttribute('data-open') === 'true';
+  mainNav.setAttribute('data-open', (!open).toString());
+  menuToggle.setAttribute('aria-expanded', String(!open));
+});
+
+// Smooth scroll
+qa('nav.main-nav a').forEach(a => {
+  a.addEventListener('click', (e) => {
+    if (a.getAttribute('href').startsWith('#')){
+      e.preventDefault();
+      const id = a.getAttribute('href');
+      document.querySelector(id)?.scrollIntoView({behavior:'smooth', block:'start'});
+      if (window.matchMedia('(max-width:800px)').matches){
+        mainNav.setAttribute('data-open','false');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+  });
+});
+
+// Theme toggle
+const themeToggle = q('#themeToggle');
+const rootBody = document.body;
+const saved = localStorage.getItem('axum_theme');
+if (saved === 'light') rootBody.classList.add('light');
+themeToggle?.addEventListener('click', () => {
+  rootBody.classList.toggle('light');
+  localStorage.setItem('axum_theme', rootBody.classList.contains('light') ? 'light' : 'dark');
+});
+
+// Fade-in
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+},{threshold:0.15});
+qa('.animate').forEach(el => io.observe(el));
+
+// Filters
+const filters = qa('.filter-btn');
+const cards = qa('.portfolio-grid .card');
+filters.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filters.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+    btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
+    const filter = btn.dataset.filter;
+    cards.forEach(card => {
+      const cat = card.dataset.category;
+      card.style.display = (filter === 'all' || filter === cat) ? '' : 'none';
+      if (card.style.display !== 'none') card.classList.add('visible');
+    });
+  });
+});
+
+// Modal gallery
+const modal = document.getElementById('portfolioModal');
+const modalImg = document.getElementById('modalImg');
+const modalClose = document.getElementById('modalClose');
+const prevImg = document.getElementById('prevImg');
+const nextImg = document.getElementById('nextImg');
+let currentImages = [];
+let currentIndex = 0;
+
+qa('.portfolio-grid .card').forEach(card => {
+  card.addEventListener('click', () => {
+    const imgs = card.dataset.images ? card.dataset.images.split(',') : [card.querySelector('img').getAttribute('src')];
+    currentImages = imgs;
+    currentIndex = 0;
+    showModalImage();
+    modal.style.display = 'flex';
+  });
+});
+
+function showModalImage(){ modalImg.src = currentImages[currentIndex]; }
+prevImg.addEventListener('click', () => {
+  if(currentImages.length > 0){
+    currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length; showModalImage();
+  }
+});
+nextImg.addEventListener('click', () => {
+  if(currentImages.length > 0){
+    currentIndex = (currentIndex + 1) % currentImages.length; showModalImage();
+  }
+});
+modalClose.addEventListener('click', () => { modal.style.display = 'none'; });
+modal.addEventListener('click', (e) => { if (e.target === modal) modal.style.display = 'none'; });
+document.addEventListener('keyup', (e) => {
+  if (modal.style.display === 'flex'){
+    if (e.key === 'Escape') modal.style.display = 'none';
+    if (e.key === 'ArrowRight') nextImg.click();
+    if (e.key === 'ArrowLeft') prevImg.click();
+  }
+});
+
+// Contact form (Formspree JSON)
+const contactForm = q('#contactForm');
+const formStatus = q('#formStatus');
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mwpnwwdy';
+
+contactForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const data = {
+    name: q('#name').value.trim(),
+    email: q('#email').value.trim(),
+    subject: q('#subject').value.trim(),
+    message: q('#message').value.trim(),
+    timestamp: new Date().toISOString()
+  };
+  formStatus.textContent = 'Sending...';
+  try {
+    const resp = await fetch(FORMSPREE_ENDPOINT, {
+      method:'POST',
+      headers:{ 'Content-Type':'application/json', 'Accept':'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (resp.ok){
+      formStatus.textContent = 'Message sent — I will reply soon.';
+      contactForm.reset();
+    } else {
+      const error = await resp.json().catch(()=>({}));
+      formStatus.textContent = error?.error || 'Failed to send. Try again or email me directly.';
+    }
+  } catch (err){
+    console.error(err);
+    formStatus.textContent = 'Network error. Please try again later.';
+  }
+});
+</script>
+</body>
+</html>
